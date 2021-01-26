@@ -19,12 +19,11 @@ public class Login {
 
     public static void signIn() throws InterruptedException, IOException {
 
-        ChromeOptions headless = new ChromeOptions();	// Chrome
-        //	FirefoxOptions headless = new FirefoxOptions(); // firefox
+        ChromeOptions headless = new ChromeOptions();
+
         headless.setHeadless(true);
 
-        WebDriver driver = new ChromeDriver(headless);	// Chrome
-        //	WebDriver driver = new FirefoxDriver(headless);  // firefox
+        WebDriver driver = new ChromeDriver(headless);
         driver.get("https://finance.yahoo.com");
         try {
             System.out.println("Logging into Yahoo Financial Web Page");
